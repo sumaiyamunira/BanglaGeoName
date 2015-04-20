@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#ffffff"
+        android:splitMotionEvents="false" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:splitMotionEvents="false" >
+
+            <EditText
+                android:id="@+id/edt_txt_email"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="example@mail.com"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_view_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="Receiver Email"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_sendEmail"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/relative"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:text="Send"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
